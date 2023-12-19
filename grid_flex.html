@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
+  <style>
+  
+    header{
+      grid-template-columns: 10cm;
+      background-color: rgb(209, 227, 189);
+      position:-ms-page;
+      width: 100%;
+     display: flex;
+     flex-direction: row;
+     grid-template-rows: 1fx 5fx 400px;
+    } 
+
+    button {
+      border-radius: 20px;
+      align-items: center;
+       background-color: #f4f4fa;
+      border-radius: 4px;
+      border-width: 0;
+      box-shadow: rgba(108, 98, 132, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+      box-sizing: border-box;
+      color: #3c6471;
+      cursor: pointer;
+      display: inline-flex;
+      font-family: "JetBrains Mono",monospace;
+      height: 48px;
+      justify-content: center;
+      line-height: 1;
+      overflow: hidden;
+      padding-left: 16px;
+      padding-right: 16px;
+      position: relative;
+      text-align: left;
+      transition: box-shadow .15s,transform .15s;
+      touch-action: manipulation;
+      white-space: nowrap;
+      will-change: box-shadow,transform;
+      font-size: 18px;
+}
+button:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+    .img{
+      border-radius: 50px;
+      padding-left: 15px;
+      
+    }
+    .img:hover {
+      box-shadow: 0 0 20px 10px rgba(122, 126, 221, 0.5);
+      
+    }
+    nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+ul {
+  display: flex;
+  gap: 1rem;
+  padding-left: 14cm;
+}
+nav li {
+  font-size: 1.8rem;
+  border-bottom: 0.4rem transparent solid;
+  transition: 0.3s ease-in-out;
+}
+nav li:hover {
+  border-bottom: 0.4rem var(--secondary-color) solid;
+  transition: 0.3s ease-in-out;
+}
+body{
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.b1 button{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 20cm;
+}
+   main{
+      border-radius: 50px;
+      background-color: rgb(243, 217, 239);
+      position: relative;
+      width: 100%;
+      height: auto;
+      }   
+    main h1{
+      text-align: center;
+      padding-top: 10px;
+      display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    }   
+    h3{
+      font-style: italic;
+      text-align: center;
+    }  
+    .container {
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      grid-template-rows: 1fr 50%;
+      text-align: justify;
+      padding-left:20px;
+    }
+    div{
+      font-size: 20px;
+      font-family: sans-serif;
+      padding-left: 50px;
+      padding-right:50px;
+    }
+    .container img{
+      text-align: center;
+      padding :40px
+    }
+    p{
+      text-transform: capitalize;
+      text-indent: 10px;
+    }
+    .div4{
+        padding-bottom: 50px;
+        
+    }
+    .back-to-top-wrapper{
+      text-align: right;
+
+    }
+    .footer{
+      border-radius: 30px;
+      font-style: italic;
+      color: #f4f4fa;
+      background-color: rgb(223, 133, 133);
+    }
+    footer a{
+      color: brown;
+    }
+
+  </style>
+</head>
+<body>
+<div class="m1">
+  <header>
+    <nav>
+    
+    <img src="logo-color.png" alt="logo-color" height="100px" width="150px">
+    <h1 >Portfolio</h1>
+    <ul>
+    <button class="b1"><a href="#home"> home </a></button>
+    <button class="b2"><a href="#project"> projects </a></button>
+    <button class="b3"><a href="#Contact_us"> Contact us </a></button>
+    <button class="b4"><a href="Resume.html"> About us  </a></button>
+    </ul>
+</nav>
+</header>
+<section id="home">
+   <main>
+    <h1 >Ashwini Lakkas</h1>
+    <h3>Hey , I am Java Full Stack Devloper  </h3>
+<div class="container">
+    <img class="img " src="IMG_9169.JPG" alt="pic" height="250px" width="300px">
+<div class="div1">
+<p>
+  Hello, my name is <b>Ashwini Lakkas</b>, and I’m a <i>full stack Java developer</i>. With 0.6 years of experience in Teaching Sector, 
+  I have a strong command over both front-end and back-end technologies, allowing me to build complete and scalable applications.
+    On the front-end side, I specialize in HTML, CSS, and JavaScript frameworks such as React . I’m passionate about creating intuitive 
+user interfaces that provide an exceptional user experience. I pay great attention to detail, ensuring that the websites or applications 
+I develop are responsive, visually appealing, and accessible across different devices and browsers.
+</p>
+</div>
+
+</div>
+
+<div class="div2">
+<p>
+  Moving to the back end, I’m proficient in server-side languages like Java. I have extensive experience working with databases such as MySQL,
+   PostgreSQL, and Oracle, and I can design efficient database structures and write optimized queries. I’m familiar with RESTful APIs and know 
+   how to integrate them into applications to enable seamless communication between the front end and back end.</p>
+  </div>
+  <div class="div3">
+    <p>
+Additionally, I have expertise in version control systems like Git, and I’m comfortable working in collaborative environments using 
+Agile methodologies. I enjoy staying up to date with the latest trends and technologies in the web development world,
+ as it allows me to continually improve my skills and deliver cutting-edge solutions.</p>
+</div>
+<div class="div4">
+  <p>
+Throughout my career, I’ve had the opportunity to work on various projects, 
+ranging from small startups to large-scale enterprise applications. 
+I thrive in dynamic environments where I can tackle challenges, collaborate with cross-functional teams, 
+and deliver high-quality solutions that meet both user requirements and business objectives.
+I’m excited to be part of a team where I can contribute my full stack java development skills and help create innovative and impactful 
+applications.
+</p>
+</div>
+
+
+
+
+
+  </main>
+</section>
+<section id="Contact_us"></section>
+    <div class="footer">
+      <footer > <div class="back-to-top-wrapper">
+        <a text-align="center" href="#top" class="back-to-top-link" aria-label="Scroll to Top">🔝</a>
+        <p>2023-2024</p>
+        @copyright <a href="grid_flex.html">Ashwini</a>
+      </div>
+    </footer>
+    </div>
+</div>
+</body>
+</html>
