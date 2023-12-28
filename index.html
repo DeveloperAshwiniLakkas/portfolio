@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
   <style>
-  
-    header{
+    .m1 {
+      background-image: url("https://media.istockphoto.com/id/1357628526/photo/indicator-pencils-as-a-sign-of-financial-volatility.jpg?s=2048x2048&w=is&k=20&c=DompFk3o3M7FHUb4mfU_9X9D-JOKekKph9IxNiMUFCw=");
+    }
+
+    section .Contact_us {
+      border-radius: 20px;
+      padding: 30px;
+      background-color: aqua;
+    }
+
+    header {
       grid-template-columns: 10cm;
       background-color: rgb(209, 227, 189);
-      position:-ms-page;
+      position: -ms-page;
       width: 100%;
-     display: flex;
-     flex-direction: row;
-     grid-template-rows: 1fx 5fx 400px;
-    } 
+      display: flex;
+      flex-direction: row;
+      grid-template-rows: 1fx 5fx 400px;
+    }
+
+    .list {
+      padding: 5%;
+      box-shadow: blueviolet;
+      scrollbar-shadow-color: violet;
+      text-shadow: tomato;
+    }
 
     button {
       border-radius: 20px;
       align-items: center;
-       background-color: #f4f4fa;
+      background-color: #f4f4fa;
       border-radius: 4px;
       border-width: 0;
-      box-shadow: rgba(108, 98, 132, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+      box-shadow: rgba(108, 98, 132, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
       box-sizing: border-box;
       color: #3c6471;
       cursor: pointer;
       display: inline-flex;
-      font-family: "JetBrains Mono",monospace;
+      font-family: "JetBrains Mono", monospace;
       height: 48px;
       justify-content: center;
       line-height: 1;
@@ -36,201 +59,370 @@
       padding-right: 16px;
       position: relative;
       text-align: left;
-      transition: box-shadow .15s,transform .15s;
+      transition: box-shadow .15s, transform .15s;
       touch-action: manipulation;
       white-space: nowrap;
-      will-change: box-shadow,transform;
+      will-change: box-shadow, transform;
       font-size: 18px;
-}
-button:focus {
-  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-}
+    }
 
-button:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  
-  transform: translateY(-2px);
-}
+    .list {
+      position: relative;
+      width: 50%;
+      max-width: 300px;
+    }
 
-button:active {
-  box-shadow: #D6D6E7 0 3px 7px inset;
-  transform: translateY(2px);
-}
-    .img{
+    button:focus {
+      box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    }
+
+    button:hover {
+      box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+
+      transform: translateY(-2px);
+    }
+
+    button:active {
+      box-shadow: #D6D6E7 0 3px 7px inset;
+      transform: translateY(2px);
+    }
+
+    .img {
       border-radius: 50px;
       padding-left: 15px;
-      
+
     }
+
     .img:hover {
       box-shadow: 0 0 20px 10px rgba(122, 126, 221, 0.5);
-      
-    }
-    nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-}
-ul {
-  display: flex;
-  gap: 1rem;
-  padding-left: 14cm;
-}
-nav li {
-  font-size: 1.8rem;
-  border-bottom: 0.4rem transparent solid;
-  transition: 0.3s ease-in-out;
-}
-nav li:hover {
-  border-bottom: 0.4rem var(--secondary-color) solid;
-  transition: 0.3s ease-in-out;
-}
-body{
-  position: relative;
-  scroll-behavior: smooth;
-}
 
-.b1 button{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-left: 20cm;
-}
-   main{
+    }
+
+    .l1 {
+      position: absolute;
+      bottom: 0;
+      background: rgb(0, 0, 0);
+      background: rgba(0, 0, 0, 0.5);
+      /* Black see-through */
+      color: #f1f1f1;
+      width: 100%;
+      transition: .5s ease;
+      opacity: 0;
+      color: white;
+      font-size: 20px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    ul {
+      display: flex;
+      gap: 1rem;
+      padding-left: 14cm;
+    }
+
+    nav li {
+      font-size: 1.8rem;
+      border-bottom: 0.4rem transparent solid;
+      transition: 0.3s ease-in-out;
+    }
+
+    nav li:hover {
+      border-bottom: 0.4rem var(--secondary-color) solid;
+      transition: 0.3s ease-in-out;
+    }
+
+    body {
+      position: relative;
+      scroll-behavior: smooth;
+    }
+
+
+    .plist {
+
+      display: list-item;
+      width: 300px;
+      height: auto;
+    }
+
+    .b1 button {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding-left: 20cm;
+    }
+
+    main {
       border-radius: 50px;
       background-color: rgb(243, 217, 239);
       position: relative;
       width: 100%;
       height: auto;
-      }   
-    main h1{
+    }
+
+    main h1 {
       text-align: center;
       padding-top: 10px;
       display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    }   
-    h3{
+      font-size: 2em;
+      margin-block-start: 0.67em;
+      margin-block-end: 0.67em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+    }
+
+    h3 {
       font-style: italic;
       text-align: center;
-    }  
+    }
+
+    .heading {
+      text-align: center;
+    }
+
     .container {
       width: 90%;
       display: flex;
       flex-direction: row;
       grid-template-rows: 1fr 50%;
       text-align: justify;
-      padding-left:20px;
+      padding-left: 20px;
     }
-    div{
+
+    div {
       font-size: 20px;
       font-family: sans-serif;
       padding-left: 50px;
-      padding-right:50px;
+      padding-right: 50px;
     }
-    .container img{
+
+    .list:hover .l1 {
+      opacity: 1;
+    }
+
+    .container img {
       text-align: center;
-      padding :40px
+      padding: 40px
     }
-    p{
+
+    p {
       text-transform: capitalize;
       text-indent: 10px;
     }
-    .div4{
-        padding-bottom: 50px;
-        
+
+    .div4 {
+      padding-bottom: 50px;
+
     }
-    .back-to-top-wrapper{
+
+    .back-to-top-wrapper {
       text-align: right;
 
     }
-    .footer{
+
+    .footer {
       border-radius: 30px;
       font-style: italic;
       color: #f4f4fa;
       background-color: rgb(223, 133, 133);
     }
-    footer a{
+
+    footer a {
       color: brown;
     }
-
   </style>
 </head>
+
 <body>
-<div class="m1">
-  <header>
-    <nav>
-    
-    <img src="logo-color.png" alt="logo-color" height="100px" width="150px">
-    <h1 >Portfolio</h1>
-    <ul>
-    <button class="b1"><a href="#home"> home </a></button>
-    <button class="b2"><a href="#project"> projects </a></button>
-    <button class="b3"><a href="#Contact_us"> Contact us </a></button>
-    <button class="b4"><a href="Resume.html"> About us  </a></button>
-    </ul>
-</nav>
-</header>
-<section id="home">
-   <main>
-    <h1 >Ashwini Lakkas</h1>
-    <h3>Hey , I am Java Full Stack Devloper  </h3>
-<div class="container">
-    <img class="img " src="IMG_9169.JPG" alt="pic" height="250px" width="300px">
-<div class="div1">
-<p>
-  Hello, my name is <b>Ashwini Lakkas</b>, and I’m a <i>full stack Java developer</i>. With 0.6 years of experience in Teaching Sector, 
-  I have a strong command over both front-end and back-end technologies, allowing me to build complete and scalable applications.
-    On the front-end side, I specialize in HTML, CSS, and JavaScript frameworks such as React . I’m passionate about creating intuitive 
-user interfaces that provide an exceptional user experience. I pay great attention to detail, ensuring that the websites or applications 
-I develop are responsive, visually appealing, and accessible across different devices and browsers.
-</p>
-</div>
+  <div class="m1">
+    <header>
+      <nav>
 
-</div>
+        <img src="logo-color.png" alt="logo-color" height="100px" width="150px">
+        <h1>Portfolio</h1>
+        <ul>
+          <button class="b1"><a href="#home"> home </a></button>
+          <button class="b2"><a href="#project"> projects </a></button>
+          <button class="b3"><a href="#Contact_us"> Contact us </a></button>
+          <button class="b4"><a href="Resume.html"> About us </a></button>
+        </ul>
+      </nav>
+    </header>
+    <section id="home">
+      <main>
+        <h1>Ashwini Lakkas</h1>
+        <h3>Hey , I am Java Full Stack Devloper </h3>
+        <div class="container">
+          <img class="img " src="IMG_9169.JPG" alt="pic" height="250px" width="300px">
+          <div class="div1">
+            <p>
+              Hello, my name is <b>Ashwini Lakkas</b>, and I’m a <i>full stack Java developer</i>. With 0.6 years of
+              experience in Teaching Sector,
+              I have a strong command over both front-end and back-end technologies, allowing me to build complete and
+              scalable applications.
+              On the front-end side, I specialize in HTML, CSS, and JavaScript frameworks such as React . I’m passionate
+              about creating intuitive
+              user interfaces that provide an exceptional user experience. I pay great attention to detail, ensuring
+              that the websites or applications
+              I develop are responsive, visually appealing, and accessible across different devices and browsers.
+            </p>
+          </div>
 
-<div class="div2">
-<p>
-  Moving to the back end, I’m proficient in server-side languages like Java. I have extensive experience working with databases such as MySQL,
-   PostgreSQL, and Oracle, and I can design efficient database structures and write optimized queries. I’m familiar with RESTful APIs and know 
-   how to integrate them into applications to enable seamless communication between the front end and back end.</p>
-  </div>
-  <div class="div3">
-    <p>
-Additionally, I have expertise in version control systems like Git, and I’m comfortable working in collaborative environments using 
-Agile methodologies. I enjoy staying up to date with the latest trends and technologies in the web development world,
- as it allows me to continually improve my skills and deliver cutting-edge solutions.</p>
-</div>
-<div class="div4">
-  <p>
-Throughout my career, I’ve had the opportunity to work on various projects, 
-ranging from small startups to large-scale enterprise applications. 
-I thrive in dynamic environments where I can tackle challenges, collaborate with cross-functional teams, 
-and deliver high-quality solutions that meet both user requirements and business objectives.
-I’m excited to be part of a team where I can contribute my full stack java development skills and help create innovative and impactful 
-applications.
-</p>
-</div>
+        </div>
 
+        <div class="div2">
+          <p>
+            Moving to the back end, I’m proficient in server-side languages like Java. I have extensive experience
+            working with databases such as MySQL,
+            PostgreSQL, and Oracle, and I can design efficient database structures and write optimized queries. I’m
+            familiar with RESTful APIs and know
+            how to integrate them into applications to enable seamless communication between the front end and back end.
+          </p>
+        </div>
+        <div class="div3">
+          <p>
+            Additionally, I have expertise in version control systems like Git, and I’m comfortable working in
+            collaborative environments using
+            Agile methodologies. I enjoy staying up to date with the latest trends and technologies in the web
+            development world,
+            as it allows me to continually improve my skills and deliver cutting-edge solutions.</p>
+        </div>
+        <div class="div4">
+          <p>
+            Throughout my career, I’ve had the opportunity to work on various projects,
+            ranging from small startups to large-scale enterprise applications.
+            I thrive in dynamic environments where I can tackle challenges, collaborate with cross-functional teams,
+            and deliver high-quality solutions that meet both user requirements and business objectives.
+            I’m excited to be part of a team where I can contribute my full stack java development skills and help
+            create innovative and impactful
+            applications.
+          </p>
+        </div>
+      </main>
+    </section>
 
-
-
-
-  </main>
-</section>
-<section id="Contact_us"></section>
-    <div class="footer">
-      <footer > <div class="back-to-top-wrapper">
-        <a text-align="center" href="#top" class="back-to-top-link" aria-label="Scroll to Top">🔝</a>
-        <p>2023-2024</p>
-        @copyright <a href="grid_flex.html">Ashwini</a>
+    <section id="project">
+      <div class="project">
+        <h1 class="heading">Projects</h1>
+        <ul class="list">
+          <a href="https://developerashwinilakkas.github.io/Developer/">
+            <img class="plist" src="latadi.png" alt="Tribute page">
+            <div class="l1">Tribute</div>
+          </a>
+          <a href="https://developerashwinilakkas.github.io/html5/">
+            <img class="plist" src="form.png">
+            <div class="l1">Form</div>
+          </a>
+          <a href="https://developerashwinilakkas.github.io/HTML/">
+            <img class="plist" src="portfolio.png" alt="portfolio">
+            <div class="l1">Portfolio</div>
+          </a>
+          <a href="https://developerashwinilakkas.github.io/portfolio/Resume.html">
+            <img class="plist" src="resume.png" alt="resume">
+            <div class="l1">Resume</div>
+          </a>
+        </ul>
       </div>
-    </footer>
+    </section>
+
+
+    <section id="Contact_us">
+      <div class="Contact_us">
+        <h1 class="heading">Contact Us</h1>
+        <div class="container">
+          <div class="container-sm">
+            <div class="">
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="FirstName" class="form-label">First Name</label>
+                  <input type="FirstName" class="form-control" id="FirstName">
+                </div>
+                <div class="col-md-6">
+                  <label for="lastName" class="form-label">lastName</label>
+                  <input type="lastName" class="form-control" id="lastName">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Address 2</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">State</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div>
+                <fieldset class="row mb-3">
+                  <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="male" id="male" value="option1" checked>
+                      <label class="form-check-label" for="male">
+                        male
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="female" id="female" value="option2">
+                      <label class="form-check-label" for="female">
+                        female
+                      </label>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="footer">
+      <footer>
+        <div class="back-to-top-wrapper">
+          <a text-align="center" href="#top" class="back-to-top-link" aria-label="Scroll to Top">🔝</a>
+          <p>2023-2024</p>
+          @copyright <a href="grid_flex.html">Ashwini</a>
+        </div>
+      </footer>
     </div>
-</div>
+  </div>
 </body>
+
 </html>
